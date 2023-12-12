@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+  }
+  /* nav bar and hero img*/
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(59, 71, 82);
+  }
+  header img {
+    border-radius: 40px;
+    padding: 5px;
+  }
+  li {
+    border-bottom: 3px solid;
+    color: rgb(147, 206, 207);
+    margin-right: 10px;
+  }
+  
+  h1 {
+    background: rgb(147, 206, 207);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(59, 71, 82);
+    text-indent: 2rem;
+  }
+  .nav_links { 
+    list-style: none;
+    text-decoration: none;
+  }
+  .nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(147, 206, 207);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+  /* hero banner */
+  
+  .hero-banner {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    background-color: rgb(23, 44, 81);
+  }
+  .hero-banner img{
+    margin-top: -175px;
+    filter: opacity(0.5);
+  }
+  .cool_subtitle {
+    position: absolute;
+    bottom: 8px;
+    right: 30px;
+    font-size: large;
+    margin: 20px;
+  }
+  .cool_subtitle h2{
+    background-color: rgb(147, 206, 207);
+    color: rgb(59, 71, 82);
+  }
+
+  /* Main Section */
+
+  .flexrow {
+    display: flex;
+    gap: 2em;
+    justify-content: flex-start;
+    margin: 20px;
+  }
+
+.left {
+    padding-top: 20px;
+    padding-right: 10px;
+    margin-right: 0;
+    font-size: 3rem;
+    margin-left: 100px;
+    color: rgb(59, 71, 82);
+    width: 20%;
+    border-right: 3px solid;
+    border-color: rgb(59, 71, 82);
+    line-height: 1em;
+}
+
+  .right {
+    flex: 1;
+  }
+  .image {
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(147, 206, 207);
+  }
+.working {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.workPics-2, .workPics-3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.workPics-1 {
+    height: 400px;
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(147, 206, 207);
+}
+.box_subtitle_1 {
+    position: absolute;
+    margin-top: 10px;
+    font-size: large;
+    background-color: rgb(147, 206, 207);
+  }
+  .box_subtitle_2 {
+    position: absolute;
+    font-size: large;
+    margin-top: 20px;
+    background-color: rgb(147, 206, 207);
+  }
+  .box_subtitle_3 {
+    position: absolute;
+    right: 25px;
+    font-size: large;
+    margin-top: 20px;
+    background-color: rgb(147, 206, 207);
+  }
+  .box_subtitle_4 {
+    position: absolute;
+    right: 25px;
+    font-size: large;
+    margin-top: 20px;
+    background-color: rgb(147, 206, 207);
+  }
+  .box_subtitle_5 { 
+    position: absolute;
+    font-size: large;
+    margin-top: 20px;
+    background-color: rgb(147, 206, 207);
+  }
+h4 {
+    background-color: rgb(147, 206, 207);
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+  }
+
+/* Contact */
+.contact_links { 
+    list-style: none;
+    text-decoration: none;
+    margin-left: 40px;
+  }
+  .contact_links li{
+    display: inline-block;
+    padding: 0 20px;
+    padding-top: 40px;
+    color: rgb(59, 71, 82);
+  }
+  .working p {
+    color: aliceblue;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  /* Resume */
+  .resume p {
+    padding: 0 30px;
+    padding-top: 20px;
+    color: rgb(59, 71, 82);
+  }
+
+  /* Media Queries */
+
+  @media (max-width: 1000px) {
+    .flexrow {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .left {
+      border-right: none;
+    }
+  
+    h1 {
+      text-indent: none;
+    }
+  }
+  @media (max-width: 635px) {
+    .workPics-1 {
+      height: 200px;
+    }
+  }
